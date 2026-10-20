@@ -1,12 +1,15 @@
 export const site = {
-  name: "Juan Sebastian Perea",
+  name: "JuanSe Perea",
   role: "Fullstack Developer",
   url: "https://juanseperea.dev",
   // Hero: one sentence on what you do. Keep it concrete.
   tagline:
     "I design the data layer, build the API, and ship the interface on top.",
+  // Hero: one sentence on what you do. Keep it concrete.
+  whoami:
+    "Who am I, really? Constancy. Self Improvement made person, the one that is step by step, not immediate but inevitable. I'm a happy person learning to be succesful and happier. I also happen to be a Software developer.",
   summary:
-    "4+ years building multi-tenant SaaS, systems integrations, and LLM-powered automation for legal tech and B2B.",
+    "4+ years working on software as Fullstack. I love learning about software, about how to do it great, secure and useful.",
   location: "Cali, Colombia",
   timezone: "UTC-5 — full overlap with US business hours",
   availability: "Open to remote roles in the US & EU",
@@ -14,7 +17,7 @@ export const site = {
   links: {
     linkedin: "https://linkedin.com/in/juanseperea",
     // TODO: point at your GitHub profile once you have public repos worth reading.
-    github: "https://github.com/",
+    github: "https://github.com/Juanse1595",
   },
   // TODO: drop your current CV at public/cv.pdf
   cv: "/cv.pdf",

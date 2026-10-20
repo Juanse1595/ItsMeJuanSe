@@ -3,20 +3,13 @@ import { site } from "@/lib/site";
 export function Hero() {
   return (
     <header className="py-20 sm:py-28">
-      <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs text-muted">
-        <span
-          aria-hidden
-          className="h-1.5 w-1.5 rounded-full bg-accent"
-        />
-        {site.availability}
-      </p>
 
       <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
         {site.name}
       </h1>
 
       <p className="mt-5 max-w-2xl text-xl leading-snug sm:text-2xl">
-        {site.role} — {site.tagline}
+        {site.whoami}
       </p>
 
       <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
