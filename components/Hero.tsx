@@ -17,16 +17,10 @@ export function Hero() {
       </p>
 
       <p className="mt-6 text-sm text-muted">
-        {site.location} · {site.timezone}
+        {site.location}
       </p>
 
       <div className="mt-9 flex flex-wrap items-center gap-3">
-        <a
-          href="#work"
-          className="rounded-md bg-fg px-4 py-2.5 text-sm font-medium text-bg transition-opacity hover:opacity-85"
-        >
-          See my work
-        </a>
         <a
           href={`mailto:${site.email}`}
           className="rounded-md border border-line px-4 py-2.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"

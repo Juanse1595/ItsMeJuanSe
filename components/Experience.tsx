@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { Section } from "./Section";
-import { experience, education } from "@/lib/site";
+import { experience, projects, education } from "@/lib/site";
 
 export function Experience() {
   return (
@@ -20,21 +19,28 @@ export function Experience() {
               <p className="mt-2 max-w-2xl leading-relaxed text-muted">
                 {job.blurb}
               </p>
-              {job.caseStudy && (
-                <Link
-                  href={`/work/${job.caseStudy}`}
-                  className="mt-2 inline-block text-sm text-accent underline underline-offset-4"
-                >
-                  Read the case study
-                </Link>
-              )}
             </div>
           </li>
         ))}
       </ol>
 
       <h3 className="mb-6 mt-16 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
-        Education
+        Projects
+      </h3>
+      <ol className="space-y-5">
+        {projects.map((p) => (
+          <li key={p.name} className="grid gap-1 sm:grid-cols-[9rem_1fr] sm:gap-8">
+            <div className="text-xs text-muted sm:pt-1">{p.period}</div>
+            <div>
+              <h4 className="text-sm font-medium">{p.name}</h4>
+              <p className="text-sm text-muted">{p.detail}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+      <h3 className="mb-6 mt-16 text-xs font-semibold uppercase tracking-[0.14em] text-muted">
+        Education - Certifications
       </h3>
       <ol className="space-y-5">
         {education.map((e) => (

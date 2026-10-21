@@ -15,20 +15,11 @@ npm run typecheck
 | What | Where |
 | --- | --- |
 | Name, contact, availability, stack, experience | `lib/site.ts` |
-| Case studies | `content/work/*.mdx` |
-| "How I work" copy | `content/how-i-work.mdx` |
-| Colors, typography, prose styles | `app/globals.css` |
+| Colors, typography, carousel animation | `app/globals.css` |
 | Page sections | `components/` |
-
-Adding a case study = drop a new `.mdx` file in `content/work/`. It appears on
-the homepage and gets its own page automatically. Set `published: false` in the
-frontmatter to keep a draft out of the build; `order` controls homepage sort.
 
 ## Before shipping
 
-- [ ] Write the three case studies (search the repo for `TODO`)
-- [ ] Rewrite `content/how-i-work.mdx` in your own voice
-- [ ] Add `public/cv.pdf` — the Contact and Hero links point at it
 - [ ] Set the real GitHub URL in `lib/site.ts`
 - [ ] Add an OG image (`app/opengraph-image.png`, 1200x630)
 - [ ] Buy `juanseperea.dev` and point it at Vercel
