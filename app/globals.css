@@ -78,3 +78,15 @@ body {
   .marquee { overflow-x: auto; }
   .marquee-track { animation: none; }
 }
+
+/* --- Greeting modal --------------------------------------------------- */
+.greeting-fade-in {
+  animation: greeting-fade-in 1.4s ease-out both;
+}
+@keyframes greeting-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .greeting-fade-in { animation: none; }
+}
